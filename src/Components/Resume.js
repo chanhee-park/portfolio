@@ -26,11 +26,10 @@ class Resume extends Component {
       })
       var skill = this.props.data.skill.map(function(skill){
         return <div key={skill.title}><h3>{skill.title}</h3>
-            <p className="info">
-                <em className="date">
-                    {skill.details.map(detail => {
-                    return <span>&bull;{detail}<br /></span>})
-                    }</em></p>
+            <em className="info">
+                {skill.details.map(detail => {
+                return <span>&bull;{detail}<br /></span>})
+                }</em><p />
         </div>
       })
     }

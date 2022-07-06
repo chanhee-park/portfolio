@@ -51,15 +51,24 @@
     "project": [
       {
         "title": "Movie Info Website",
-        "skill": "skills : React.js, Spring Boot",
+        "skill": "skills : React.js",
         "description": [
           "다양한 장르의 영화 및 원하는 영화에 대한 간략한 정보를 확인할 수 있습니다.",
-          "해당 데이터는 axios를 활용하여 외부DB인 tmdb 데이터를 받아 사용합니다.",
-          "일부 데이터는 Spring Boot에서 tmdb 데이터를 받아 연동하였습니다.",
+          "해당 데이터는 axios를 활용하여 외부DB(tmdb)데이터를 받아 사용합니다.",
           "메인화면에서 영화 예고편 감상이 가능합니다.",
           "메인화면에서 Swipe 기능을 통해, 여러 영화 포스터 확인이 가능합니다.",
           "상단 Navbar에서 Search아이콘을 통해 원하는 영화 검색이 가능합니다.",
           "영화 포스터를 클릭하면, 간략한 정보를 확인할 수 있습니다."
+        ]
+      },
+      {
+        "title": "Movie Info Backend",
+        "skill": "skills : Spring Boot",
+        "description": [
+          "Movie Info Website에 Data를 제공할 수 있습니다.",
+          "Scheduler와 RestTemplate로 외부DB(tmdb)데이터를 주기적으로 DB에 저장합니다.",
+          "RestController를 통해 FE(Client)의 요청에 따른 데이터를 제공합니다.",
+          "효율성을 위해 Client가 필요로 하는 데이터만 추출하고 저장하여 제공합니다."
         ]
       },
       {
@@ -78,12 +87,13 @@
       {
         "title": "Spring Boot",
         "details": [
-          "Controller와 Service로 사용자 요청 처리 후, 뷰에 모델 객체를 넘겨줄 수 있습니다.",
+          "Controller와 Service로 Client 요청 처리 후, 뷰에 모델 객체를 넘겨줄 수 있습니다.",
+          "RestController와 Service로 Client 요청 처리 후, Client에 데이터를 넘겨줄 수 있습니다.",
           "RestTemplate를 통해, Rest API를 호출하여 데이터를 가져와 활용할 수 있습니다.",
           "JPA로 DB(H2, MySql)와 JAVA 객체를 연결하여 데이터 처리를 할 수 있습니다.",
           "간단한 Mustache를 통해 뷰를 구현할 수 있습니다."
           ],
-        "description": "외부 데이터를 받아 ReactJS와 연동, (Appendix)간단한 게시판 개발"
+        "description": "Movie Info Backend, (Appendix)간단한 게시판 개발"
       },
       {
         "title": "ReactJS",
@@ -91,7 +101,7 @@
           "ReactRedux의 상태관리 기능을 통해 컴포넌트에 state를 공유할 수 있습니다.",
           "ReactRouter.v6를 활용하여, 페이지에 필요한 컴포넌트를 불러올 수 있습니다.",
           "axios를 통해, HTTP비동기 통신으로 외부 data를 받아올 수 있습니다."],
-        "description": "영화 정보 웹사이트"
+        "description": "Movie Info Website"
       },
       {
         "title": "PYTHON",
@@ -104,9 +114,15 @@
     "projects": [
       {
         "title": "Movie Info Webpage",
-        "category": "developed with ReactJS and Spring Boot",
+        "category": "developed with ReactJS",
         "image": "Movie-Info-Webpage.PNG",
         "url": "https://github.com/HSeo-git/lesson-matching-fe"
+      },
+      {
+        "title": "Movie Info Backend",
+        "category": "developed with Spring Boot",
+        "image": "Movie-Info-Backend.PNG",
+        "url": "https://github.com/HSeo-git/MovieInfoBackend"
       },
       {
         "title": "(Appendix)Simple Bulletin Board",
